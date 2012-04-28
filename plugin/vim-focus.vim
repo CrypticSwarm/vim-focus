@@ -1,4 +1,5 @@
 function! FocusProto()
+  setlocal foldmethod=manual
   vimgrep /\vfunction\s+[^(]+\s*\(/ %
   copen
   buffer "[Quickfix List]"
